@@ -1,6 +1,10 @@
 # project-euler
+
 This is a collection of my solutions for Project Euler problems written in Haskell.
-Many problems have been written in their own separate files, but some of the simpler ones have been combined in `solutions/simple-problems.hs`.
+
+The problems themselves can be found at https://projecteuler.net/archives.
+
+Many solutions have been written in their own separate files in the `solutions/` directory (e.g., the solution for problem 622 can be found in `solutions/0622.hs`), but some of the simpler ones have been combined in a single file at `solutions/simple-problems.hs`.
 
 Currently, the problems with full solutions are
 1 - 25, 27, 28, 622.
