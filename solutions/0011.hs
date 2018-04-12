@@ -39,9 +39,3 @@ maxProducts i0 j0 i1 j1 i2 j2 i3 j3 d x y =
             [b (i + i0) (j + j0), b (i + i1) (j + j1), b (i + i2) (j + j2), b (i + i3) (j + j3)]
         -- Specify element in bigsquare on row i, column j, with indices starting at zero.
         b x y = bigsquare !! x !! y
-
--- Deprecated (unclean) versions of the above max product functions:
--- maxHorizontalProducts = maximum [product [b i j, b i     (j+1), b i     (j+2), b i     (j+3)] | i <- [0..(length bigsquare) - 1], j <- [0 .. (length (bigsquare !! 0)) - 4]]
--- maxVerticalProducts   = maximum [product [b i j, b (i+1) j    , b (i+2) j    , b (i+3) j    ] | i <- [0..(length bigsquare) - 4], j <- [0 .. (length (bigsquare !! 0)) - 1]]
--- maxDiag1Products      = maximum [product [b i j, b (i+1) (j+1), b (i+2) (j+2), b (i+3) (j+3)] | i <- [0..(length bigsquare) - 4], j <- [0 .. (length (bigsquare !! 0)) - 4]
--- maxDiag2Products      = maximum [product [b i j, b (i+1) (j-1), b (i+2) (j-2), b (i+3) (j-3)] | i <- [0..(length bigsquare) - 4], j <- [3 .. (length (bigsquare !! 0)) - 1]]
