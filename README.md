@@ -9,5 +9,5 @@ Many solutions have been written in their own separate files in the `solutions/`
 Some solutions rely on functions defined in the EulerFunctions library in `solutions/EulerFunctions.hs`.
 
 Currently, the problems with full solutions are
-1 - 25, 27, 29, 30, 622.
+1 - 25, 27 - 30, 622.
 The `solutions` directory also contains partial/incomplete solutions for various other problems.
