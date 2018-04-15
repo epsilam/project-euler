@@ -7,5 +7,4 @@
 -- Since a 1001 by 1001 square has 500 layers (by our definition of a layer above), we simply take the sum of this expression over n <- [1..500].
 -- Of course, don't forget to add the 1 from the center.
 
-main = print $ (1 + sum [layerSum n | n <- [1..500]])
-layerSum n = 4 * (4 * n^2 + n + 1)
+main = print $ (1 + sum [4*(4*n^2+n+1)| n <- [1..500]])
